@@ -22,5 +22,14 @@
       Display the mouse X and Y coordinates in a span tag when you click on a h1
       tag which contains a paragraph.
     </h2>
+    <span id="span"></span>
+    <script>
+      const element = document.getElementById("head");
+      const span = document.getElementById("span");
+      element.addEventListener("click",(e)=>{
+          span.innerHTML = `Coordinates of Mouse X = ${e.pageX} and Mouse Y = ${e.pageY}`
+      })
+
+    </script>
   </body>
 </html>
